@@ -1,0 +1,87 @@
+/* App.css */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upper-half {
+    flex: 1;
+    background-color: #F0F2EA; /* Tomato color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .bottom-half {
+    flex: 1;
+    background-color: #006769; /* SteelBlue color */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px 40px;
+    color: white;
+  }
+  
+  .left-side {
+    width: 45%; /* Reduced width of the left side */
+    margin-right: 220px; /* Increased space between left and right parts */
+    padding-top: 10px; /* Adjust this value to move the content up or down */
+    margin-left:100px;
+  }
+  
+  .left-side h1 {
+    margin-bottom: 50px;
+    margin-top: 0; /* Removes extra margin above the heading */
+    position: relative;
+    top: 10px; /* Move the heading up by 20px (adjust as needed) */
+  }
+  
+  .left-side p {
+    margin: 5px 0;
+  }
+  
+  .newsletter {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .text-field {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .subscribe-btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .right-side {
+    width: 40%; /* Reduced width of the right side */
+    margin-right: 30px; /* Added margin to the right side */
+  }
+  
+  .right-side p {
+    margin: 5px 0;
+  }
+  
+  .links {
+    margin-top: 15px;
+  }
+  .toll-free-info {
+    font-size: 20px; /* Increase the size as needed */
+     /* Optional: makes the text bold */
+     /* Optional: change color if needed */
+  }
+  .links p {
+    margin: 5px 0;
+  }
+  
