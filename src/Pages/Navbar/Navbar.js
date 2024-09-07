@@ -7,7 +7,7 @@ function Navbar() {
     <div className="App">
       <nav className="navbar">
         <div className="nav-left">
-          <Link to="/">Ayush</Link>
+          <Link to="/">Ayush-Veda</Link>
         </div>
         <div className="nav-right">
           <Link to="/startup">Startup</Link>

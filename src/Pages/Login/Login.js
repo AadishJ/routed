@@ -27,7 +27,8 @@ function Login() {
                 navigate("/dashboard");
             })
             .catch((err) => {
-                console.log("Error: ", err);
+                console.log( "Error: ", err );
+                alert( "Error: ", err.message );
             });
     };
 

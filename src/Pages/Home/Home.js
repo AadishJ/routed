@@ -11,7 +11,7 @@ function Home() {
             <HomeSec1/>
             <HomeSec2 />
             <HomeSec3 />
-            <Carousels text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, fuga quia quos illo fugiat illum, perferendis, eveniet id accusantium accusamus facilis praesentium laudantium!" />
+            <Carousels text="|InvestIndia| |StartupIndia| |All India Intitute of Ayurveda| |Ministry Of Ayush|" />
             <AboutUs/>
         </div> 
 

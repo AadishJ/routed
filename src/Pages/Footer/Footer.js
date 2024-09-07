@@ -1,36 +1,39 @@
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
-  return (
-  <div>
-    <div className="container">
-      <div className="upper-half">
-      </div>
-      <div className="bottom-half">
-        <div className="left-side">
-          <h1>Ayush Startup<br/> Challenge</h1>
-          <p>Ayush startup newsletter</p>
-          <p>Get the latest in Ayurveda health<br/> research, industry updates, and<br/> more</p>
-          <div className="newsletter">
-            <input type="text" placeholder="Enter your email" className="text-field" />
-            <button className="subscribe-btn">Subscribe</button>
-          </div>
-        </div>
-        <div className="right-side"><br/>
-        <p className="toll-free-info">
-    Toll Free Number: 1800 115 565<br />
-    Working Hrs: 10:00 am- 5:30 pm
-  </p><br /><br />
-          <div className="links">
-            <p>Blogs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terms of Use</p><br />
-            <p>Privacy Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use Startup India Logo</p><br />
-            <p>Contact Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request for Proposal</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      );
+	return (
+		<div className="container-Xz34Q">
+			<div className="bottom-half-Yh5Ln">
+				<div className="left-side-Hg8Rs">
+					<h1 className="left-side-h1-Hg8Rs">Ayush Startup Challenge</h1>
+					<br />
+					<div className="links-Zf3Gl">
+						<p className="links-p-Zf3Gl">Blogs</p>
+						<br />
+						<p className="links-p-Zf3Gl">Privacy Policy</p>
+						<br />
+						<p className="links-p-Zf3Gl">Contact Us</p>
+						<br />
+					</div>
+				</div>
+				<div className="right-side-Ap9Qb">
+					<p className="toll-free-info-Fd5Lm">
+						Toll Free Number: 1800 115 565
+						<br />
+						Working Hrs: 10:00 am- 5:30 pm
+					</p>
+					<br />
+					<div className="links-Zf3Gl">
+						<p className="links-p-Zf3Gl">Terms of Use</p>
+						<br />
+						<p className="links-p-Zf3Gl">Use Startup India Logo</p>
+						<br />
+						<p className="links-p-Zf3Gl">Request for Proposal</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default Footer;

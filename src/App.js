@@ -6,6 +6,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import NavBar from './Pages/Navbar/Navbar';
 import Profile from './Pages/Profile/Profile';
 import Footer from './Pages/Footer/Footer';
+import Registration from './Pages/StartupRegistration/Register';
 
 function App() {
 
@@ -17,9 +18,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={ <Profile /> } />
+        <Route path="/registration" element={ <Registration/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
