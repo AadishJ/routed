@@ -4,6 +4,8 @@ import HomeSec3 from './HomeSec3';
 import AboutUs from './AboutUs';
 import "./Home.css";
 import Carousels from './Carousels';
+import GST from './GST';
+import Footer from './../Footer/Footer';
 
 function Home() {
     return (
@@ -13,6 +15,8 @@ function Home() {
             <HomeSec3 />
             <Carousels text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, fuga quia quos illo fugiat illum, perferendis, eveniet id accusantium accusamus facilis praesentium laudantium!" />
             <AboutUs/>
+            {/* <GST/> */}
+            <Footer />
         </div> 
 
     );

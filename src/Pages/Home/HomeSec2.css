@@ -9,9 +9,9 @@
     font-family: 'Inter', sans-serif;
     text-align: center;
     padding: 40px;
-    background-color: #f9f9f9; /* Light background to contrast with text */
+    background-color: #f9f9f9;
     position: relative;
-    overflow: hidden; /* Hide overflow to ensure the image does not affect layout */
+    overflow: hidden;
 }
 .text
 {
@@ -23,9 +23,9 @@
     left: 0;
     width: 100%;
     height: auto;
-    object-fit: cover; /* Cover the area while preserving aspect ratio */
-    opacity: 0.5; /* Slightly transparent to make text stand out */
-    z-index: 1; /* Place behind the text */
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .header div {
@@ -42,18 +42,27 @@
 }
 
 .subheader {
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: normal;
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the text */
-    line-height: 1.6; /* Improve readability */
-    text-align: justify; /* Better alignment for paragraphs */
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
+    .text {
+        margin-top: 40px !important;
+    }
+
+    .background-img {
+        display: none;
+    }
+
     .header {
-        font-size: 36px; /* Smaller font size for smaller screens */
+        font-size: 36px;
         padding: 20px;
     }
 
@@ -62,8 +71,12 @@
         margin-bottom: 15px;
     }
 
+    h5 {
+        font-size: 20px !important;   
+    }
+
     .subheader {
-        font-size: 18px;
+        font-size: 15px !important;
         width: 90%;
     }
 }

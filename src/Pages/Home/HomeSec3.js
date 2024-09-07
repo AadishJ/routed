@@ -3,7 +3,7 @@ import "./HomeSec3.css"
 function HomeSec3 ()
 {
     return (
-        <div className="background ">
+        <div className="d-flex">
             <Card
                 header="This is a card"
                 info="This tells"

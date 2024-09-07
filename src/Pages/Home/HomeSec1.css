@@ -1,5 +1,5 @@
-.left-half, .right-half {
-    flex: 1; /* Each side takes up 50% of the width */
+/* .left-half, .right-half {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,30 +7,116 @@
   }
   
   .right-half {
-    background-color: #f5f5f5; /* Optional background color for right side */
+    background-color: #f5f5f5;
   }
   
   .left-half {
-    background-color: #f5f5f5; /* Optional background color for left side */
-    padding-left: 40px; /* Optionally adjust horizontal padding */
+    background-color: #f5f5f5;
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: center;
+    align-items: flex-start;
   }
   
   .left-half h1 {
     font-size: 70px;
     color: #545454;
     text-align: left;
-    margin: 0; /* Remove default margin */
-    padding-bottom: 10px; /* Add space below the heading */
+    margin: 0;
+    padding-bottom: 10px;
   }
   
   .left-half p {
     font-size: 18px;
     color: #545454;
     text-align: left;
-    margin-top: 0; /* Remove top margin */
-  }
+    margin-top: 0;
+  } */
   
+
+
+
+
+
+  /* Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: row; /* Default to row layout */
+  height: calc(100vh - 80px); /* Adjust based on navbar height */
+  padding: 20px;
+}
+
+.left-half, .right-half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-half {
+  background-color: #f5f5f5;
+}
+
+.left-half {
+  background-color: #f5f5f5;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-half h1 {
+  font-size: 70px;
+  color: #545454;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.left-half p {
+  font-size: 18px;
+  color: #545454;
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column; /* Stack vertically on medium screens */
+    height: auto; /* Adjust height for vertical layout */
+  }
+
+  .left-half, .right-half {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-half h1 {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+
+  .left-half p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .left-half h1 {
+    font-size: 40px; /* Further reduce font size on small screens */
+  }
+
+  .left-half p {
+    font-size: 14px; /* Further reduce font size on small screens */
+  }
+}

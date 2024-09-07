@@ -1,7 +1,23 @@
-.background
-{
+.d-flex {
     display: flex;
-    gap: 10px;
-    margin: 10px;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Optional: Adds space between cards */
+}
+
+.d-flex > * {
+    flex: 1 1 calc(25% - 20px); /* Makes each card take 25% width minus gap on larger screens */
+    min-width: 200px; /* Ensures a minimum size for each card */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack the cards vertically on small screens */
+        align-items: center; /* Optional: Center the cards */
+    }
+
+    .d-flex > * {
+        flex: 1 1 100%; /* Cards take full width on mobile */
+        margin-bottom: 10px; /* Adds space between cards on mobile */
+    }
 }
