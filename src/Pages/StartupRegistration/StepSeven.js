@@ -1,4 +1,3 @@
-// StepSeven.js
 import React, { useState } from 'react';
 
 function StepSeven({ onNext, onPrevious, formData }) {
@@ -72,8 +71,10 @@ function StepSeven({ onNext, onPrevious, formData }) {
           placeholder="Enter intellectual property details"
         />
       </div>
-      <button type="button" className="btn btn-secondary me-2" onClick={onPrevious}>Previous</button>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <div className="d-flex justify-content-between">
+        <button type="button" className="btn btn-secondary" onClick={onPrevious}>Previous</button>
+        <button type="submit" className="btn btn-primary">Next</button>
+      </div>
     </form>
   );
 }

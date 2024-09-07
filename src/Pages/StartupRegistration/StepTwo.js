@@ -1,5 +1,4 @@
-// StepTwo.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function StepTwo({ onNext, onPrevious, formData }) {
   const [addressData, setAddressData] = useState({
@@ -13,6 +12,13 @@ function StepTwo({ onNext, onPrevious, formData }) {
     subdistrict: ''
   });
 
+  useEffect(() => {
+    // Populate the form with existing data if available
+    if (formData.addressData) {
+      setAddressData(formData.addressData);
+    }
+  }, [formData]);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setAddressData({
@@ -23,7 +29,7 @@ function StepTwo({ onNext, onPrevious, formData }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onNext({ ...formData, ...addressData });
+    onNext({ addressData });
   };
 
   return (

@@ -1,25 +1,27 @@
-.left-half, .right-half {
+.left-half {
     flex: 1; /* Each side takes up 50% of the width */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
   }
+  .overall
+  {
+    background-color: #000000;
+  }
   .orange
   {
     color: orange;
   }
-  #texty
-  {
-    color: #2C7865;
-    /* font-family: inter; */
-    font-weight: bolder;
-    font-size: 36px;
-  }
   .right-half {
-    background-color: #f5f5f5; /* Optional background color for right side */
+    background-color: #f5f5f5;
   }
-  
+  .backrnd
+  {
+    position: relative;
+    height: 90vh;
+    right: 0;
+  }
   .left-half {
     background-color: #f5f5f5; /* Optional background color for left side */
     padding-left: 40px; /* Optionally adjust horizontal padding */

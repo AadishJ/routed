@@ -1,4 +1,3 @@
-// StepNine.js
 import React, { useState } from 'react';
 
 function StepNine({ onNext, onPrevious, formData }) {
@@ -32,6 +31,7 @@ function StepNine({ onNext, onPrevious, formData }) {
           value={teamData.numberOfEmployees}
           onChange={handleChange}
           placeholder="Enter number of employees"
+          required
         />
       </div>
       <div className="mb-3">

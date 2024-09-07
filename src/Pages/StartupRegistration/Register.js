@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import StepOne from './StepOne';
 import StepTwo from './StepTwo';
 import StepThree from './StepThree';
@@ -13,9 +14,7 @@ import './MultiStepForm.css'; // Import the CSS file
 
 function MultiStepForm() {
   const [currentStep, setCurrentStep] = useState(1);
-
   const [formData, setFormData] = useState({
-    // Step Fields
     startupName: '',
     incorporationDate: '',
     businessEntity: '',
@@ -26,7 +25,17 @@ function MultiStepForm() {
       address: '',
       phoneNumber: ''
     },
-    // Other step fields...
+    addressData: {
+      fullAddress: '',
+      addressLine1: '',
+      addressLine2: '',
+      city: '',
+      stateUnion: '',
+      pincode: '',
+      district: '',
+      subdistrict: ''
+    },
+    // Additional fields...
   });
 
   const handleNext = (data) => {
@@ -41,10 +50,15 @@ function MultiStepForm() {
     setCurrentStep(currentStep - 1);
   };
 
-  const handleSubmit = () => {
-    // Final submission, formData contains all the collected data
-    console.log('Collected Form Data:', formData);
-    alert('Form submitted successfully!');
+  const handleSubmit = async () => {
+    try {
+      const response = await axios.post('/registration', formData);
+      console.log('Response:', response.data);
+      alert('Form submitted successfully!');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
   };
 
   const renderStep = () => {

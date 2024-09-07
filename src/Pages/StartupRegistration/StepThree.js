@@ -1,5 +1,4 @@
-// StepThree.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function StepThree({ onPrevious, onSubmit, formData }) {
   const [representativeData, setRepresentativeData] = useState({
@@ -8,6 +7,13 @@ function StepThree({ onPrevious, onSubmit, formData }) {
     mobileNoOfAuthorizedRepresentative: '',
     emailIdOfAuthorizedRepresentative: ''
   });
+
+  useEffect(() => {
+    // Populate the form with existing data if available
+    if (formData.representativeData) {
+      setRepresentativeData(formData.representativeData);
+    }
+  }, [formData]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -19,7 +25,7 @@ function StepThree({ onPrevious, onSubmit, formData }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit({ ...formData, ...representativeData });
+    onSubmit({ ...formData, representativeData });
   };
 
   return (
@@ -76,8 +82,10 @@ function StepThree({ onPrevious, onSubmit, formData }) {
           required
         />
       </div>
-      <button type="button" className="btn btn-secondary me-2" onClick={onPrevious}>Previous</button>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <div className="d-flex justify-content-between">
+        <button type="button" className="btn btn-secondary" onClick={onPrevious}>Previous</button>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </div>
     </form>
   );
 }

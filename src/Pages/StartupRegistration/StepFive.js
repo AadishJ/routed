@@ -1,4 +1,3 @@
-// StepFive.js
 import React, { useState } from 'react';
 
 function StepFive({ onNext, onPrevious, formData }) {
@@ -78,8 +77,10 @@ function StepFive({ onNext, onPrevious, formData }) {
           rows="4"
         />
       </div>
-      <button type="button" className="btn btn-secondary me-2" onClick={onPrevious}>Previous</button>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <div className="d-flex justify-content-between">
+        <button type="button" className="btn btn-secondary" onClick={onPrevious}>Previous</button>
+        <button type="submit" className="btn btn-primary">Next</button>
+      </div>
     </form>
   );
 }

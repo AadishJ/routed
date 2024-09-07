@@ -55,7 +55,7 @@ body {
   height: calc(100vh - 80px); /* Full height minus navbar height */
 }
 
-.left-half, .right-half {
+.left-halfa, .right-halfa {
   flex: 1; /* Each side takes up 50% of the width */
   display: flex;
   justify-content: center;

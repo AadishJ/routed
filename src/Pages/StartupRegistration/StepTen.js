@@ -1,7 +1,6 @@
-// StepTen.js
 import React, { useState } from 'react';
 
-function StepTen({ onPrevious, formData }) {
+function StepTen({ onPrevious, onNext, formData }) {
   const [dpiitData, setDpiitData] = useState({
     dpiitRecognition: ''
   });
@@ -16,8 +15,7 @@ function StepTen({ onPrevious, formData }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic
-    console.log({ ...formData, ...dpiitData });
+    onNext({ ...formData, ...dpiitData });
   };
 
   return (
@@ -32,10 +30,11 @@ function StepTen({ onPrevious, formData }) {
           value={dpiitData.dpiitRecognition}
           onChange={handleChange}
           placeholder="Enter DPIIT recognition details"
+          required
         />
       </div>
       <button type="button" className="btn btn-secondary me-2" onClick={onPrevious}>Previous</button>
-      <button type="submit" className="btn btn-success">Submit</button>
+      <button type="submit" className="btn btn-success">Finish</button>
     </form>
   );
 }

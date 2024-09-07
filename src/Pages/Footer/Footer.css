@@ -6,6 +6,12 @@
   justify-content: space-around;
 }
 
+.photoo {
+  position: relative;
+  bottom: 0;
+  z-index: -1;
+}
+
 .upper-half-Xz34Q {
   flex: 1;
   background-color: #F0F2EA;
@@ -18,7 +24,8 @@
 
 .bottom-half-Yh5Ln {
   flex: 1;
-  background-color: #006769;
+  background: url('../../Assets/Mask.png') no-repeat center center; /* Set the background image */
+  background-size: cover; /* Ensure the image covers the whole element */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

@@ -5,24 +5,24 @@ function HomeSec3 ()
     return (
         <div className="background ">
             <Card
-                header="This is a card"
-                info="This tells"
+                header="StartUp"
+                info="Showcase services Requested Investment Request mentorship"
             />
             <Card
-                header="This is a card"
-                info="This tells"
+                header="Investors"
+                info="Showcase Services Invested projects"
             />
             <Card
-                header="This is a card"
-                info="This tells"
+                header="Mentorship"
+                info="Provide Mentorship Enrolled Mentorships"
             />
             <Card
-                header="This is a card"
-                info="This tells"
+                header="Policies"
+                info="Government Policies"
             />
             <Card
-                header="This is a card"
-                info="This tells"
+                header="Events"
+                info="Forums Webinars Groups"
             />
         </div>
     );
